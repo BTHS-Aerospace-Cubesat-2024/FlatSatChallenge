@@ -37,6 +37,8 @@ i2c = board.I2C()
 accel_gyro = LSM6DS(i2c)
 mag = LIS3MDL(i2c)
 picam2 = Picamera2()
+camera_config = picam2.create_preview_configuration()
+picam2.configure(camera_config)
 
 
 def git_push():
@@ -79,8 +81,6 @@ def take_photo():
         accelx, accely, accelz = accel_gyro.acceleration
         if accelx > 0 or accely > 0 or accelz > 0:
                 time.sleep(1)
-                camera_config = picam2.create_preview_configuration()
-                picam2.configure(camera_config)
                 #picam2.start_preview(Preview.DRM)
                 picam2.start()
                 time.sleep(2)
