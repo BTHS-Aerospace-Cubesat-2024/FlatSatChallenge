@@ -12,13 +12,7 @@ You will need to complete the take_photo() function and configure the VARIABLES 
 
 #AUTHOR: Samuel Ashkenas
 #DATE: Feb/5/2024
-"""
-Todo: 
-1 - repo path on Pi
-2 - Log into git
-3 - Test photo
-4 - Email out Github Org link
-"""
+
 #import libraries
 import time
 import board
