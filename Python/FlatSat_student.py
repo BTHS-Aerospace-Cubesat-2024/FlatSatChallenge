@@ -47,14 +47,15 @@ def git_push():
     """
     try:
         repo = Repo(REPO_PATH)
-        origin = repo.remote('origin.url')
+        origin = repo.remote('origin')
         print('added remote')
         origin.pull()
         print('pulled changes')
         repo.git.add(REPO_PATH + FOLDER_PATH)
         repo.index.commit('New Photo')
         print('made the commit')
-        origin.push()
+        repo.git.execute("git push <insertkey>@github.com/BTHS-Aerospace-Cubesat-2024/FlatSatChallenge.git")
+        #origin.push()
         print('pushed changes')
     except:
         print('Couldn\'t upload to git')
