@@ -30,7 +30,7 @@ from picamera2 import Picamera2
 #VARIABLES
 THRESHOLD = 0      #Any desired value from the accelerometer
 REPO_PATH = "/home/pi/Desktop/FlatsatChallenge"     #Your github repo path: ex. /home/pi/FlatSatChallenge
-FOLDER_PATH = "/Photos"   #Your image folder path in your GitHub repo: ex. /Images
+FOLDER_PATH = "Photos"   #Your image folder path in your GitHub repo: ex. /Images
 
 #imu and camera initialization
 i2c = board.I2C()
