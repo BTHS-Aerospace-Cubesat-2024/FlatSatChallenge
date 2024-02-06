@@ -47,7 +47,7 @@ def git_push():
     """
     try:
         repo = Repo(REPO_PATH)
-        origin = repo.remote('origin')
+        origin = repo.remote('origin.url')
         print('added remote')
         origin.pull()
         print('pulled changes')
