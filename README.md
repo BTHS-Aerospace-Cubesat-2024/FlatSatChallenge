@@ -1,7 +1,7 @@
 # Flat Satellite Challenge
 
 Technite MIT Cubesat - FlatSatChallenge Resources and Submissions <br> <br>
-![Static Badge](https://img.shields.io/badge/Status-In_progress-blue)
+![Static Badge](https://img.shields.io/badge/Status-Done-green)
 
 <br>
 Goals of this project: 
